@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstmap.c                                        :+:      :+:    :+:   */
+/*   ft_lstmap_bonus.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: daiki-ogawa <daiki-ogawa@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/25 16:47:12 by daiki-ogawa       #+#    #+#             */
-/*   Updated: 2021/08/07 00:45:08 by daiki-ogawa      ###   ########.fr       */
+/*   Updated: 2021/08/16 12:34:34 by daiki-ogawa      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,10 +21,7 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 		return (NULL);
 	newLst = ft_lstnew(f(lst->content));
 	if (!newLst)
-	{
-		ft_lstclear(&newLst, del);
 		return (NULL);
-	}
 	tmp = newLst;
 	lst = lst->next;
 	while (lst != NULL)

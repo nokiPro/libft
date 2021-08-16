@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstsize.c                                       :+:      :+:    :+:   */
+/*   ft_lstsize_bonus.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: daiki-ogawa <daiki-ogawa@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/25 14:47:09 by daiki-ogawa       #+#    #+#             */
-/*   Updated: 2021/07/31 22:45:53 by daiki-ogawa      ###   ########.fr       */
+/*   Updated: 2021/08/16 12:33:54 by daiki-ogawa      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,16 +15,14 @@
 int	ft_lstsize(t_list *lst)
 {
 	size_t	i;
-	t_list	*tmp;
 
-	if (!lst)
-		return (0);
 	i = 0;
-	tmp = lst;
-	while (tmp != NULL)
+	while (lst != NULL)
 	{
-		tmp = tmp->next;
+		lst = lst->next;
 		i++;
 	}
-	return (i);
+	if (i > INT_MAX)
+		return (-1);
+	return ((int)i);
 }
