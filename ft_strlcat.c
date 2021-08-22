@@ -6,7 +6,7 @@
 /*   By: daiki-ogawa <daiki-ogawa@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/13 21:44:42 by daiki-ogawa       #+#    #+#             */
-/*   Updated: 2021/08/16 20:13:59 by daiki-ogawa      ###   ########.fr       */
+/*   Updated: 2021/08/22 22:56:14 by daiki-ogawa      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,6 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dst_c)
 	src_len = ft_strlen(src);
 	if (dst_c <= dst_len)
 		return (dst_len + src_len);
-	// size_tだから足し算の方がいいかも
 	while (i + dst_len + 1 < dst_c && src[i] != '\0')
 	{
 		dst[dst_len + i] = src[i];

@@ -6,7 +6,7 @@
 /*   By: daiki-ogawa <daiki-ogawa@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/21 21:56:09 by daiki-ogawa       #+#    #+#             */
-/*   Updated: 2021/08/16 20:30:19 by daiki-ogawa      ###   ########.fr       */
+/*   Updated: 2021/08/22 23:31:57 by daiki-ogawa      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,8 +24,8 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	if (s_len < start)
 		return (ft_strdup(""));
 	if (s_len < len)
-		len = s_len + start;
-	ret = malloc(sizeof(char) * len + 1);
+		len = ft_strlen(start);
+	ret = malloc(sizeof(char) * (len + 1));
 	if (!ret)
 		return (NULL);
 	ft_strlcpy(ret, s + start, len + 1);

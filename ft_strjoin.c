@@ -6,7 +6,7 @@
 /*   By: daiki-ogawa <daiki-ogawa@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/21 22:24:17 by daiki-ogawa       #+#    #+#             */
-/*   Updated: 2021/08/16 20:03:11 by daiki-ogawa      ###   ########.fr       */
+/*   Updated: 2021/08/22 23:02:47 by daiki-ogawa      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	char	*ret;
 
 	if (!s1 && !s2)
-		// ここに入る時点でおかしいから、NULL返すべきかも
-		return (ft_strdup(""));
+		return (NULL);
 	if (!s1)
 		return (ft_strdup((char *)s2));
 	if (!s2)
