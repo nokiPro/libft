@@ -6,7 +6,7 @@
 /*   By: daiki-ogawa <daiki-ogawa@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/05 17:15:34 by daiki-ogawa       #+#    #+#             */
-/*   Updated: 2021/08/08 22:16:10 by daiki-ogawa      ###   ########.fr       */
+/*   Updated: 2021/08/16 17:18:11 by daiki-ogawa      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,7 +50,7 @@ char	*ft_itoa(int a)
 	size_t			len;
 
 	len = int_count(a);
-	ret = malloc(sizeof(char) * len + 1);
+	ret = malloc(sizeof(char) * (len + 1));
 	if (!ret)
 		return (NULL);
 	tmp = ret;

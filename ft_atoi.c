@@ -6,7 +6,7 @@
 /*   By: daiki-ogawa <daiki-ogawa@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/16 23:15:43 by daiki-ogawa       #+#    #+#             */
-/*   Updated: 2021/08/08 22:15:50 by daiki-ogawa      ###   ########.fr       */
+/*   Updated: 2021/08/16 19:56:38 by daiki-ogawa      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,8 +36,6 @@ int	ft_atoi(const char *str)
 	i = 0;
 	sign = 1;
 	num = 0;
-	if (*str == 0)
-		return (0);
 	while (ft_isspace(str[i]))
 		i++;
 	if (str[i] == '+' || str[i] == '-')
@@ -46,7 +44,7 @@ int	ft_atoi(const char *str)
 			sign = -1;
 		i++;
 	}
-	while (str[i] >= '0' && str[i] <= '9')
+	while (ft_isdigit(str[i]))
 	{
 		if ((num * 10 + (str[i] - '0')) / 10 != num)
 			return ((int)ret_max_min(sign));

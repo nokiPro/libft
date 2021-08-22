@@ -6,7 +6,7 @@
 /*   By: daiki-ogawa <daiki-ogawa@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/12 00:11:53 by daiki-ogawa       #+#    #+#             */
-/*   Updated: 2021/08/16 12:35:55 by daiki-ogawa      ###   ########.fr       */
+/*   Updated: 2021/08/16 19:11:03 by daiki-ogawa      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,10 +19,6 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 
 	dst_p = dst;
 	src_p = src;
-	if (!dst)
-		return (NULL);
-	if (len == 0 || !src)
-		return (dst);
 	if (dst_p < src_p)
 	{
 		while (len--)

@@ -6,7 +6,7 @@
 /*   By: daiki-ogawa <daiki-ogawa@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/15 21:23:11 by daiki-ogawa       #+#    #+#             */
-/*   Updated: 2021/08/08 17:46:09 by daiki-ogawa      ###   ########.fr       */
+/*   Updated: 2021/08/16 19:30:11 by daiki-ogawa      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,14 +18,12 @@ char	*ft_strchr(const char *s, int c)
 	size_t	len_s;
 
 	i = 0;
-	len_s = ft_strlen(s);
-	while (len_s--)
+	while (1)
 	{
 		if (s[i] == (char)c)
 			return ((char *)&s[i]);
+		if (!s[i])
+			return (NULL);
 		i++;
 	}
-	if (s[i] == (char)c)
-		return ((char *)&s[i]);
-	return (0);
 }

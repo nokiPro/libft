@@ -6,7 +6,7 @@
 /*   By: daiki-ogawa <daiki-ogawa@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/15 22:57:17 by daiki-ogawa       #+#    #+#             */
-/*   Updated: 2021/08/08 16:57:14 by daiki-ogawa      ###   ########.fr       */
+/*   Updated: 2021/08/16 16:55:41 by daiki-ogawa      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,8 +25,7 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	{
 		if (s1_2[i] == '\0' || s2_2[i] == '\0' || s1_2[i] != s2_2[i])
 			return (s1_2[i] - s2_2[i]);
-		else
-			i++;
+		i++;
 	}
 	return (0);
 }

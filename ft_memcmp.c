@@ -6,7 +6,7 @@
 /*   By: daiki-ogawa <daiki-ogawa@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/16 21:09:04 by daiki-ogawa       #+#    #+#             */
-/*   Updated: 2021/08/07 00:52:37 by daiki-ogawa      ###   ########.fr       */
+/*   Updated: 2021/08/16 19:05:44 by daiki-ogawa      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,5 +27,5 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 			return (s1_2[i] - s2_2[i]);
 		i++;
 	}
-	return (0);
+	return (NULL);
 }

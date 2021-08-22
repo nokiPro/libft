@@ -6,7 +6,7 @@
 /*   By: daiki-ogawa <daiki-ogawa@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/10 15:17:37 by daiki-ogawa       #+#    #+#             */
-/*   Updated: 2021/07/31 17:04:16 by daiki-ogawa      ###   ########.fr       */
+/*   Updated: 2021/08/16 20:31:15 by daiki-ogawa      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,6 @@ size_t	ft_strlen(char const *c)
 	size_t	i;
 
 	i = 0;
-	if (!c)
-		return (0);
 	while (c[i] != '\0')
 		i++;
 	return (i);

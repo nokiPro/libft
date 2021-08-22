@@ -6,7 +6,7 @@
 /*   By: daiki-ogawa <daiki-ogawa@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/22 16:19:29 by daiki-ogawa       #+#    #+#             */
-/*   Updated: 2021/08/07 00:50:09 by daiki-ogawa      ###   ########.fr       */
+/*   Updated: 2021/08/16 20:23:14 by daiki-ogawa      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 char	*ft_strtrim(char const *s1, char const *set)
 {
 	size_t	i;
-	char	*s;
 
 	if (!s1 || !set)
 		return (NULL);
@@ -30,6 +29,5 @@ char	*ft_strtrim(char const *s1, char const *set)
 	i = ft_strlen(s1);
 	while (i && ft_strchr(set, s1[i]))
 		i--;
-	s = ft_substr(s1, 0, i + 1);
-	return (s);
+	return (ft_substr(s1, 0, i + 1));
 }

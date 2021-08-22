@@ -6,7 +6,7 @@
 /*   By: daiki-ogawa <daiki-ogawa@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/10 14:09:58 by daiki-ogawa       #+#    #+#             */
-/*   Updated: 2021/08/08 15:49:28 by daiki-ogawa      ###   ########.fr       */
+/*   Updated: 2021/08/16 19:16:29 by daiki-ogawa      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 void	ft_bzero(void *s, size_t n)
 {
 	char	*p;
-
+	// memset使える
 	p = s;
 	while (n-- > 0)
 		*p++ = '\0';

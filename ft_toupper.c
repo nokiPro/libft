@@ -6,7 +6,7 @@
 /*   By: daiki-ogawa <daiki-ogawa@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/15 21:10:24 by daiki-ogawa       #+#    #+#             */
-/*   Updated: 2021/07/31 22:35:39 by daiki-ogawa      ###   ########.fr       */
+/*   Updated: 2021/08/16 16:23:11 by daiki-ogawa      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,6 @@
 
 int	ft_toupper(int c)
 {
-	if (!c)
-		return (0);
 	if (c >= 'a' && c <= 'z')
 		return (c - 32);
 	return (c);

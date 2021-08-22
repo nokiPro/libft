@@ -6,7 +6,7 @@
 #    By: daiki-ogawa <daiki-ogawa@student.42.fr>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/08/05 16:59:54 by daiki-ogawa       #+#    #+#              #
-#    Updated: 2021/08/16 13:26:42 by daiki-ogawa      ###   ########.fr        #
+#    Updated: 2021/08/16 18:41:54 by daiki-ogawa      ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -60,22 +60,25 @@ BONUS = ft_lstnew_bonus.c\
 
 OBJS = $(SRCS:%.c=%.o)
 B_OBJS = $(BONUS:%.c=%.o)
+
+ifdef BONUS
+OBJS+=$(B_OBJS)
+endif
+
 RM = rm -f
 
+%.o: %.c
+	$(CC) $(CFLAGS) -o $@ -c $<
+	
 all: $(NAME)
 
 bonus:
-	make bonus=1
+	make BONUS=1
 
-ifdef bonus
-OBJS+=$(B_OBJS)
-endif
 
 $(NAME): $(OBJS)
 	ar rcs $(NAME) $(OBJS)
 
-%.o: %.c
-	$(CC) $(CFLAGS) -o $@ -c $<
 
 clean:
 	$(RM) $(OBJS) $(B_OBJS)

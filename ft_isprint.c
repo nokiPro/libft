@@ -6,7 +6,7 @@
 /*   By: daiki-ogawa <daiki-ogawa@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/10 15:09:37 by daiki-ogawa       #+#    #+#             */
-/*   Updated: 2021/08/01 20:08:47 by daiki-ogawa      ###   ########.fr       */
+/*   Updated: 2021/08/16 16:20:22 by daiki-ogawa      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,5 @@
 
 int	ft_isprint(int c)
 {
-	if (c >= ' ' && c <= '~')
-		return (1);
-	return (0);
+	return (c >= ' ' && c <= '~');
 }

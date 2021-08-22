@@ -6,7 +6,7 @@
 /*   By: daiki-ogawa <daiki-ogawa@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/13 21:44:42 by daiki-ogawa       #+#    #+#             */
-/*   Updated: 2021/08/08 21:56:54 by daiki-ogawa      ###   ########.fr       */
+/*   Updated: 2021/08/16 20:04:09 by daiki-ogawa      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 	i = 0;
 	if (size != 0)
 	{
-		while (i < size - 1 && src[i] != '\0')
+		while (i + 1 < size && src[i] != '\0')
 		{
 			dest[i] = src[i];
 			i++;

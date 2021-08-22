@@ -6,7 +6,7 @@
 /*   By: daiki-ogawa <daiki-ogawa@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/07 00:53:15 by daiki-ogawa       #+#    #+#             */
-/*   Updated: 2021/08/08 21:48:11 by daiki-ogawa      ###   ########.fr       */
+/*   Updated: 2021/08/16 18:44:23 by daiki-ogawa      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 # include <stdlib.h>
 # include <stddef.h>
 # include <limits.h>
-# include <stdio.h>
+# include <stdio.h> //使わないものは消す
 # include <strings.h>
 
 typedef struct s_list

@@ -6,7 +6,7 @@
 /*   By: daiki-ogawa <daiki-ogawa@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/22 23:28:41 by daiki-ogawa       #+#    #+#             */
-/*   Updated: 2021/08/16 12:42:49 by daiki-ogawa      ###   ########.fr       */
+/*   Updated: 2021/08/16 17:00:00 by daiki-ogawa      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,5 @@ void	ft_putendl_fd(char *s, int fd)
 	if (!s)
 		return ;
 	ft_putstr_fd(s, fd);
-	n = '\n';
-	write (fd, &n, 1);
+	write (fd, "\n", 1);
 }
